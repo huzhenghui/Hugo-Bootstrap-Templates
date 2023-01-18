@@ -1,1 +1,1 @@
-./content/posts/Hugo-Bootstrap-CSS/README.md
+./content/posts/Hugo-Bootstrap-Templates/README.md
