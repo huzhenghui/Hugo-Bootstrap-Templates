@@ -15,6 +15,7 @@ publishdate: 2023-01-18
     - [版本](#版本)
         - [`v0.1`](#v01)
         - [`v0.2`](#v02)
+        - [`v0.3`](#v03)
     - [仓库结构](#仓库结构)
     - [GitHub Action](#github-action)
     - [`Hugo`配置](#hugo配置)
@@ -23,10 +24,12 @@ publishdate: 2023-01-18
     - [内容](#内容)
         - [`/content/posts/_index.md`](#contentposts_indexmd)
         - [`/content/posts/Hugo-Bootstrap-Templates/README.md`](#contentpostshugo-bootstrap-templatesreadmemd)
+        - [`/content/posts/render/heading/example.md`](#contentpostsrenderheadingexamplemd)
     - [模板](#模板)
         - [`/layouts/_default/baseof.html`](#layouts_defaultbaseofhtml)
         - [`/layouts/_default/list.html`](#layouts_defaultlisthtml)
         - [`/layouts/_default/single.html`](#layouts_defaultsinglehtml)
+        - [`/layouts/render-heading-example/_markup/render-heading.html`](#layoutsrender-heading-example_markuprender-headinghtml)
 
 ## 简介
 
@@ -58,6 +61,16 @@ publishdate: 2023-01-18
 
 <https://github.com/huzhenghui/Hugo-Bootstrap-Templates/tree/v0.2>
 
+### `v0.3`
+
+增加`Heading link example`，效果参见
+
+<https://huzhenghui.github.io/Hugo-Bootstrap-Templates/posts/render/heading/example/>
+
+位置在
+
+<https://github.com/huzhenghui/Hugo-Bootstrap-Templates/tree/v0.3>
+
 ## 仓库结构
 
 命令
@@ -71,30 +84,38 @@ tree -a -F -I '.git/'
 ```text
 ./
 ├── .github/
-│   └── workflows/
-│       └── hugo.yml
+│   └── workflows/
+│       └── hugo.yml
 ├── .gitignore
 ├── .hugo_build.lock
 ├── README.md -> ./content/posts/Hugo-Bootstrap-Templates/README.md
 ├── archetypes/
-│   └── default.md
+│   └── default.md
 ├── config.toml
 ├── content/
-│   └── posts/
-│       ├── Hugo-Bootstrap-CSS/
-│       │   └── README.md
-│       ├── Hugo-Bootstrap-Templates/
-│       │   └── README.md
-│       ├── _index.md
+│   └── posts/
+│       ├── Hugo-Bootstrap-CSS/
+│       │   └── README.md
+│       ├── Hugo-Bootstrap-Templates/
+│       │   └── README.md
+│       ├── _index.md
+│       └── render/
+│           └── heading/
+│               └── example.md
 ├── layouts/
-│   ├── _default/
-│   │   ├── baseof.html
-│   │   ├── list.html
-│   │   └── single.html
+│   ├── _default/
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── single.html
+│   └── render-heading-example/
+│       └── _markup/
+│           └── render-heading.html
 └── resources/
     └── _gen/
         ├── assets/
         └── images/
+
+17 directories, 14 files
 ```
 
 ## GitHub Action
@@ -193,6 +214,10 @@ publishdate: 2023-01-18
 Since [v0.2](https://github.com/huzhenghui/Hugo-Bootstrap-Templates/tree/v0.2)
 
 <https://github.com/huzhenghui/Hugo-Bootstrap-Templates/blob/v0.2/content/posts/Hugo-Bootstrap-Templates/README.md>
+
+### `/content/posts/render/heading/example.md`
+
+详见<https://huzhenghui.github.io/Hugo-Bootstrap-Templates/posts/render/heading/example/>
 
 ## 模板
 
@@ -321,3 +346,7 @@ Since [v0.1](https://github.com/huzhenghui/Hugo-Bootstrap-Templates/tree/v0.1)
 </aside>
 {{ end }}
 ```
+
+### `/layouts/render-heading-example/_markup/render-heading.html`
+
+详见<https://huzhenghui.github.io/Hugo-Bootstrap-Templates/posts/render/heading/example/>
